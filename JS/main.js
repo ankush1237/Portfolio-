@@ -108,9 +108,18 @@ ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
 
 // Typed.js initialization
 const typed = new Typed('.multiple-text', {
-    strings: ['Student At VNIT Mechanical Engineering', 'Web Developer', 'Learner'],
+    strings: [
+        'a Mechanical Engineering Student at VNIT',
+        'training and placement coordinator',
+        'a Tech Enthusiast',
+        'a Robotics & CAD Designer',
+        'a Web Developer',
+        'a Member of Team Velocity',
+        'a Problem Solver',
+        'a Learner'
+    ],
     typeSpeed: 80,
-    backSpeed: 80,
+    backSpeed: 90,
     backDelay: 1000,
     loop: true
 });
