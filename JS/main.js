@@ -78,7 +78,7 @@ ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
 const typed = new Typed('.multiple-text', {
     strings: [
         'Mechanical Engineering Student',
-        'T&P Core Team Member',
+        'TnP Core Team Member',
         'Web Developer',
         'Team Velocity Member',
     ],
