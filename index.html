@@ -8,119 +8,244 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Responsive Portfolio </title>
+    <title>Ankush Kulkarni | Portfolio</title>
 </head>
 
 <body>
-    <!-- header  -->
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
-
         <i class="fa-solid fa-bars" id="menu-icon"></i>
-
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#services">Experience</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- home section -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hi,Myself</h3>
+            <h3>Hi, I'm</h3>
             <h1>Ankush Kulkarni</h1>
-            <h3>And I am a <span class="multiple-text"></span> </h3>
-            <p>I am a Mechanical Engineering student at VNIT, passionate about web development, robotics, and CAD design. Constantly learning, I explore technology, innovation, and problem-solving to create impactful and efficient solutions.</p>
+            <h3>And I am a <span class="multiple-text"></span></h3>
+            <p>Final year Mechanical Engineering student at VNIT Nagpur, passionate about blending core engineering with modern technology. I build full-stack web solutions, design high-performance vehicles, and drive data insights — constantly learning, constantly creating.</p>
             <div class="social-media">
                 <a href="https://www.instagram.com/ankush__1237?igsh=MWE0bG0xdmIxMGNqNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/ankush-kulkarni-854a95291/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <a href="https://docs.google.com/document/d/15qYFU-vFJ38WLbn0VEIgjOaO6EkYm3Iw7Obl3jz1roo/edit?usp=sharing"   target="_blank" class="btn">Download</a>
+            <a href="https://drive.google.com/file/d/1ngjwzbItTKriHb255Tp4mQy0dJZ11YoI/view?usp=drive_link" target="_blank" class="btn">Download CV</a>
         </div>
         <div class="home-img">
-            <img src="./PICS/ME.jpg" alt="">
+            <img src="./PICS/ME.png" alt="Ankush Kulkarni">
         </div>
     </section>
 
-    <!-- about section -->
     <section class="about" id="about">
         <div class="about-img">
-            <img style="height: 500px; width:auto; " src="./PICS/me2.JPG" alt="">
+            <img style="height: 500px; width: auto;" src="./PICS/me2.JPG" alt="Ankush Kulkarni">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <!-- <h3>Frontend Developer</h3> -->
-            <p>Driven by curiosity and innovation, I am a Mechanical Engineering student at VNIT with a passion for web development, robotics, and CAD design. As a Training & Placement Coordinator, I strive to bridge students with industry opportunities while continuously exploring technology and problem-solving to create impactful solutions.</p>
-            <a href="#" class="btn">Read more</a>
+            <p>I'm a final-year Mechanical Engineering student at VNIT Nagpur with a passion for bridging core engineering and modern technology. As a Full-Stack Web Developer, I build clean, responsive digital solutions using HTML, CSS, JavaScript, Node.js, Express, MongoDB, and React. In Team Velocity, I apply CAD design and precision fabrication to build F1-style vehicles, while on campus, I manage the Superset platform and drive data insights as a Core Team Member for the T&amp;P section (2027 batch). Building on the hands-on experience I gained with industrial pump systems during my summer internship at BPCL's Mumbai refinery, I am currently gearing up for an upcoming internship at John Deere. Ultimately, I thrive at the intersection of design, data, and engineering.</p>
+            <button class="btn read-more-btn" data-modal="modal-about">Read More</button>
         </div>
     </section>
 
-    <!-- services section -->
+    <!-- About Modal -->
+    <div class="modal-overlay" id="modal-about">
+        <div class="modal-card">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon"><i class="fa-solid fa-user"></i></div>
+            <h3>More About Me</h3>
+            <ul>
+                <li><strong>Degree:</strong> B.Tech Mechanical Engineering, VNIT Nagpur (Class of 2026)</li>
+                <li><strong>Design &amp; Simulation:</strong> SolidWorks, Fusion 360, AutoCAD, ANSYS</li>
+                <li><strong>Programming &amp; Data:</strong> C++, Python, JavaScript, C#, SQL</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS, Tailwind CSS, React, Node.js, TypeScript</li>
+                <li><strong>Philosophy:</strong> I believe great engineers don't just build machines — they build systems, experiences, and solutions that make a difference.</li>
+                <li><strong>Currently:</strong> Incoming Intern @ John Deere | Core Team Member (T&amp;P) | Team Velocity</li>
+            </ul>
+        </div>
+    </div>
+
     <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
+        <h2 class="heading">My <span>Experience</span></h2>
         <div class="services-container">
             <div class="services-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>T&amp;P Core Team</h3>
+                <p>Core Team Member for the 2027 batch at VNIT's Training &amp; Placement cell. Managing the Superset platform and driving data insights to streamline placement operations and connect students with top industry opportunities.</p>
+                <button class="btn read-more-btn" data-modal="modal-tnp">Read More</button>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-industry"></i>
+                <h3>BPCL Refinery Intern</h3>
+                <p>Summer internship at Bharat Petroleum Corporation Limited's Mumbai refinery. Gained hands-on experience with industrial systems, focusing on pump design principles and maintenance strategies in a live production environment.</p>
+                <button class="btn read-more-btn" data-modal="modal-bpcl">Read More</button>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-gears"></i>
+                <h3>Fabrication &amp; Design — Team Velocity</h3>
+                <p>Contributing to the fabrication and design of F1-style vehicles with Team Velocity. Using CAD tools like Fusion 360 and precision engineering techniques to bring high-performance automotive concepts to life.</p>
+                <button class="btn read-more-btn" data-modal="modal-velocity">Read More</button>
+            </div>
+            <div class="services-box">
                 <i class="fa-solid fa-code"></i>
-                <h3>Web Development</h3>
-                <p>I am proficient in web development, adeptly using HTML, CSS, JavaScript, and backend technologies to create dynamic and responsive websites. With a focus on user experience and clean code practices, I design and implement solutions that meet both technical requirements and user expectations, contributing to seamless digital experiences.</p>
-                <a href="#" class="btn">Read more</a>
+                <h3>Full-Stack Web Developer</h3>
+                <p>Proficient in full-stack web development using HTML, CSS, JavaScript, Node.js, Express, MongoDB, and React. I design and implement clean, responsive solutions that prioritise user experience and solid engineering practices.</p>
+                <button class="btn read-more-btn" data-modal="modal-webdev">Read More</button>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>IMP Lead</h3>
+                <p>Lead Coordinator for the Industry Mentorship Program at VNIT. Organised mentorship sessions connecting 1st and 2nd year students with accomplished alumni through online and offline events, and led the full inauguration ceremony.</p>
+                <button class="btn read-more-btn" data-modal="modal-imp">Read More</button>
             </div>
             <div class="services-box">
                 <i class="fa-solid fa-video"></i>
                 <h3>Video Editing</h3>
-                <p>I am skilled in video editing, proficiently using industry-standard software to craft compelling visual narratives. With a keen eye for detail and creativity, I transform raw footage into engaging stories, ensuring high-quality production standards.</p>
-                <a href="#" class="btn">Read more</a>
+                <p>Skilled in video editing using industry-standard software to craft compelling visual narratives. With a keen eye for detail and creativity, I transform raw footage into engaging, story-driven content.</p>
+                <button class="btn read-more-btn" data-modal="modal-video">Read More</button>
             </div>
-            <div class="services-box">
-                <i class="fa-solid fa-gears"></i>
-                <h3>Fabrication & Design (Team Velocity)</h3>
-                <p>As a member of Team Velocity, I contribute to the fabrication and design of high-performance vehicles. Using CAD tools and precision engineering, I work on manufacturing processes to bring innovative automotive concepts to life.</p>
-                <a href="#" class="btn">Read more</a>
-            </div>
-            <div class="services-box">
-                <i class="fa-solid fa-briefcase"></i>
-                <h3>Training & Placement Coordinator</h3>
-                <p>As a T&P Coordinator, I bridge students with industry opportunities, facilitating placements and internships. I collaborate with companies, manage recruitment processes, and ensure a smooth transition for students into professional careers.</p>
-                <a href="#" class="btn">Read more</a>
-            </div>
-            
         </div>
     </section>
 
-    <!-- portfolio section -->
+    <!-- Experience Modals -->
+    <div class="modal-overlay" id="modal-tnp">
+        <div class="modal-card">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>T&amp;P Core Team — Data Insights</h3>
+            <ul>
+                <li><strong>Batch:</strong> 2027 (current)</li>
+                <li><strong>Platform:</strong> Apache Superset — building and maintaining dashboards for placement tracking</li>
+                <li><strong>Role:</strong> Data pipeline management, visualisation of placement stats, coordinating with company recruiters</li>
+                <li><strong>Impact:</strong> Streamlining how VNIT connects its students with industry — making data actionable for the placement team</li>
+                <li><strong>Skills used:</strong> SQL, Superset, data cleaning, spreadsheet automation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-bpcl">
+        <div class="modal-card">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon"><i class="fa-solid fa-industry"></i></div>
+            <h3>BPCL Summer Internship</h3>
+            <ul>
+                <li><strong>Company:</strong> Bharat Petroleum Corporation Limited</li>
+                <li><strong>Location:</strong> Mumbai Refinery</li>
+                <li><strong>Focus:</strong> Industrial pump design — centrifugal pumps, head-flow curves, NPSH analysis</li>
+                <li><strong>Maintenance:</strong> Preventive maintenance schedules, failure mode analysis, condition monitoring</li>
+                <li><strong>Takeaway:</strong> Bridged classroom theory with live refinery operations — a formative real-world engineering experience</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-velocity">
+        <div class="modal-card">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon"><i class="fa-solid fa-gears"></i></div>
+            <h3>Team Velocity — Fabrication &amp; Design</h3>
+            <ul>
+                <li><strong>Team:</strong> VNIT's competitive automotive engineering team</li>
+                <li><strong>Vehicle type:</strong> F1-style / go-kart high-performance vehicles</li>
+                <li><strong>Tools:</strong> Fusion 360 for CAD modelling, ANSYS for simulation, GD&amp;T for precision fabrication</li>
+                <li><strong>Contribution:</strong> Simulation, frame fabrication, component design, assembly and testing</li>
+                <li><strong>Competitions:</strong> National-level collegiate engineering events</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-webdev">
+        <div class="modal-card">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Full-Stack Web Development</h3>
+            <ul>
+                <li><strong>Front-end:</strong> HTML5, CSS3, JavaScript (ES6+), React</li>
+                <li><strong>Back-end:</strong> Node.js, Express.js, REST API design</li>
+                <li><strong>Database:</strong> MongoDB, Mongoose ODM</li>
+                <li><strong>Projects:</strong> Robowars event platform, this portfolio, E-Cell tech management</li>
+                <li><strong>Approach:</strong> Clean, component-driven code with a strong focus on responsive design and performance</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-imp">
+        <div class="modal-card">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon"><i class="fa-solid fa-people-group"></i></div>
+            <h3>Industry Mentorship Program (IMP) Lead</h3>
+            <ul>
+                <li><strong>Role:</strong> Lead Coordinator for the Industry Mentorship Program (IMP)</li>
+                <li><strong>Mentorship Sessions:</strong> Organised and managed mentorship interactions for 1st and 2nd year students</li>
+                <li><strong>Alumni Network:</strong> Successfully connected students with accomplished alumni through both online and offline sessions</li>
+                <li><strong>Event Management:</strong> Handled hospitality, coordination, scheduling, and smooth execution of all activities</li>
+                <li><strong>Inauguration Program:</strong> Led and managed the complete inauguration ceremony for the IMP initiative</li>
+                <li><strong>Impact:</strong> Built a professional mentorship environment that strengthened student-industry connections</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-video">
+        <div class="modal-card">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon"><i class="fa-solid fa-video"></i></div>
+            <h3>Video Editing</h3>
+            <ul>
+                <li><strong>Software:</strong> Adobe Premiere Pro, DaVinci Resolve</li>
+                <li><strong>Style:</strong> Event highlights, technical showcases, social media reels</li>
+                <li><strong>Projects:</strong> Team Velocity event videos, E-Cell promotional content</li>
+                <li><strong>Strength:</strong> Pacing and rhythm-driven cuts — making technical content feel cinematic</li>
+            </ul>
+        </div>
+    </div>
+
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Projects</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="./PICS/1.jpg" alt="">
+                <img src="./PICS/1.jpg" alt="BPCL Pump Design Project">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <h4>BPCL Pump Design &amp; Maintenance</h4>
+                    <p>Industrial pump system study and maintenance strategy analysis from my summer internship at the BPCL Mumbai refinery.</p>
+                    <a href="https://drive.google.com/file/d/1NF9rj4COpANFcHnqKevaTlMZzbXl3CWL/view?usp=sharing" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="./PICS/2.jpg" alt="">
+                <img src="./PICS/2.jpg" alt="Robowars Website">
                 <div class="portfolio-layer">
-                    <a href="https://axis24-mu.vercel.app/"><h4>Web Design</h4></a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
+                    <h4>Robowars Event Website</h4>
+                    <p>Dynamic event website built collaboratively using HTML, CSS, JS, Node.js, and Express to showcase bots, teams, and event details.</p>
+                    <a href="https://axis24-mu.vercel.app/" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="./PICS/3.jpg" alt="">
+                <img src="./PICS/3.jpg" alt="Go-Kart Team Velocity">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h4>Go-Kart — Team Velocity</h4>
+                    <p>Real-world mechanical design and performance engineering, applying CAD and fabrication skills to build a competition-ready go-kart.</p>
+                    <a href="https://drive.google.com/file/d/1ngjwzbItTKriHb255Tp4mQy0dJZ11YoI/view?usp=drive_link" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./PICS/6.jpg" alt="Responsive Portfolio">
+                <div class="portfolio-layer">
+                    <h4>Responsive Portfolio</h4>
+                    <p>Designed and built this responsive personal portfolio to showcase projects, skills, and my engineering-meets-tech journey online.</p>
                     <i class="fa-solid fa-up-right-from-square"></i>
                 </div>
             </div>
         </div>
     </section>
-    <!-- contact section  -->
+
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         <div class="contact-container">
@@ -129,22 +254,23 @@
                 <a href="https://wa.me/918591484458" target="_blank">+91 8591484458</a>
             </div>
             <div class="contact-box">
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:ankush.kulkarni1237@gmail.com">ankush.kulkarni1237@gmail.com</a>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:ankush.kulkarni1237@gmail.com">ankush.kulkarni1237@gmail.com</a>
             </div>
         </div>
     </section>
-    <!-- footer section -->
-     <footer class="footer">
+
+    <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2024 by Ankush Kulkarni | All Rights Reserved.</p>
+            <p>Copyright &copy; 2026 by Ankush Kulkarni | All Rights Reserved.</p>
         </div>
         <div class="footer-iconTop">
             <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
         </div>
-     </footer>
-     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-     <script src="https://unpkg.com/scrollreveal"></script>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./JS/main.js"></script>
 </body>
 
