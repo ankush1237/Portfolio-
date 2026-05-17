@@ -4,9 +4,20 @@ let navbar = document.querySelector('.navbar');
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
+    // prevent body scroll when nav is open
+    document.body.classList.toggle('modal-open', navbar.classList.contains('active'));
 };
 
-// Active nav link highlight + sticky header + close mobile menu on scroll
+// Close nav when a link is tapped (mobile UX)
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuIcon.classList.remove('fa-xmark');
+        navbar.classList.remove('active');
+        document.body.classList.remove('modal-open');
+    });
+});
+
+// Active nav link + sticky header
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -27,9 +38,6 @@ window.onscroll = () => {
 
     let header = document.querySelector('header');
     header.classList.toggle('sticky', scrollY > 100);
-
-    menuIcon.classList.remove('fa-xmark');
-    navbar.classList.remove('active');
 };
 
 // ── Modal Logic ───────────────────────────────────────────
