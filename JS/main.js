@@ -87,6 +87,7 @@ const typed = new Typed('.multiple-text', {
     strings: [
         'Mechanical Engineering Student',
         'TnP Core Team Member',
+        'Incoming GET @ John Deere',
         'Web Developer',
         'Team Velocity Member',
     ],
